@@ -18,29 +18,24 @@ export function AboutSection() {
           <div className="space-y-6">
             <div className="flex items-center gap-3">
               <div className="h-px flex-1 bg-gradient-to-r from-primary/50 to-transparent" />
-              <h2 className="font-mono text-sm text-primary">{"// ABOUT"}</h2>
+              <h2 className="font-mono text-sm text-primary">{"// SOBRE MI"}</h2>
             </div>
 
             <h3 className="text-3xl font-bold text-foreground sm:text-4xl">
-              Engineering solutions at the intersection of{" "}
-              <span className="text-primary">hardware and software</span>
+              Soluciones de ingeniería en la intersección de
+              <span className="text-primary"> hardware y software</span>
             </h3>
 
             <p className="text-lg leading-relaxed text-muted-foreground">
-              Telecommunications Engineer with expertise in embedded systems, real-time software development, 
-              and signal processing. I specialize in building robust firmware and software solutions that 
-              bridge the gap between complex hardware and intelligent systems.
+              Ingeniero de Telecomunicaciones especializado en sistemas embebidos, desarrollo de software en tiempo real y procesamiento de señal. Me especializo en crear firmware y soluciones software robustas que conectan hardware complejo con sistemas inteligentes.
             </p>
 
             <div className="space-y-4 pt-4">
               <p className="text-muted-foreground">
-                My experience spans radar and electronic systems development at defense industry leaders, 
-                where I&apos;ve worked on mission-critical firmware in C, developed Python automation tools for 
-                hardware validation, and collaborated across multidisciplinary engineering teams.
+                Mi experiencia abarca el desarrollo de sistemas electrónicos y de radar en la industria de defensa, donde he trabajado en firmware crítico en C, desarrollado herramientas de automatización en Python para validación de hardware y colaborado en equipos de ingeniería multidisciplinar.
               </p>
               <p className="text-muted-foreground">
-                I thrive in environments where precision meets innovation — debugging real-time constraints, 
-                optimizing embedded algorithms, and ensuring reliability in systems where failure is not an option.
+                Disfruto en entornos donde la precisión se une a la innovación: depuración de sistemas en tiempo real, optimización de algoritmos embebidos y asegurando la fiabilidad en sistemas donde el fallo no es una opción.
               </p>
             </div>
           </div>
@@ -51,23 +46,23 @@ export function AboutSection() {
               {[
                 {
                   icon: Cpu,
-                  title: "Embedded Systems",
-                  description: "Firmware development, microcontrollers, STM32, real-time operating systems",
+                  title: "Sistemas Embebidos",
+                  description: "Desarrollo de firmware, microcontroladores, STM32, sistemas operativos en tiempo real",
                 },
                 {
                   icon: Radio,
-                  title: "Signal Processing",
-                  description: "DSP algorithms, radar systems, sensor data acquisition and analysis",
+                  title: "Procesado de Señal",
+                  description: "Algoritmos DSP, sistemas radar, adquisición y análisis de datos de sensores",
                 },
                 {
                   icon: Terminal,
-                  title: "Software Engineering",
-                  description: "C/C++, Python tooling, automation frameworks, Linux systems",
+                  title: "Ingeniería de Software",
+                  description: "C/C++, herramientas Python, frameworks de automatización, sistemas Linux",
                 },
                 {
                   icon: Zap,
-                  title: "Hardware Integration",
-                  description: "HW/SW co-design, communication protocols, instrumentation",
+                  title: "Integración Hardware",
+                  description: "Co-diseño HW/SW, protocolos de comunicación, instrumentación",
                 },
               ].map((item, index) => (
                 <motion.div
@@ -100,7 +95,7 @@ export function AboutSection() {
                 <span className="relative inline-flex h-2 w-2 rounded-full bg-accent" />
               </span>
               <span className="text-muted-foreground">
-                <span className="text-accent">STATUS:</span> Open to new opportunities
+                <span className="text-accent">ESTADO:</span> Abierto a nuevas oportunidades
               </span>
             </motion.div>
           </div>

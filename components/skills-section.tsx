@@ -5,7 +5,7 @@ import { useState } from "react"
 
 const skillCategories = [
   {
-    name: "Embedded",
+    name: "Embebido",
     color: "primary",
     skills: [
       { name: "C", level: 95 },
@@ -37,17 +37,17 @@ const skillCategories = [
       { name: "UART", level: 95 },
       { name: "USB", level: 75 },
       { name: "GPIB", level: 80 },
-      { name: "Oscilloscopes", level: 85 },
+      { name: "Osciloscopios", level: 85 },
     ],
   },
   {
-    name: "Signal Processing",
+    name: "Procesado de Señal",
     color: "accent",
     skills: [
       { name: "DSP", level: 85 },
-      { name: "FFT Analysis", level: 90 },
-      { name: "Filtering", level: 85 },
-      { name: "Radar Systems", level: 80 },
+      { name: "Análisis FFT", level: 90 },
+      { name: "Filtrado", level: 85 },
+      { name: "Sistemas Radar", level: 80 },
       { name: "Sensor Fusion", level: 75 },
       { name: "NumPy/SciPy", level: 90 },
     ],
@@ -65,7 +65,7 @@ const skillCategories = [
     ],
   },
   {
-    name: "Tools",
+    name: "Herramientas",
     color: "accent",
     skills: [
       { name: "VS Code", level: 95 },
@@ -93,15 +93,14 @@ export function SkillsSection() {
           transition={{ duration: 0.5 }}
         >
           <div className="flex items-center gap-3">
-            <h2 className="font-mono text-sm text-primary">{"// SKILLS"}</h2>
+            <h2 className="font-mono text-sm text-primary">{"// HABILIDADES"}</h2>
             <div className="h-px flex-1 bg-gradient-to-r from-primary/50 to-transparent" />
           </div>
           <h3 className="text-3xl font-bold text-foreground sm:text-4xl">
-            Technical Proficiencies
+            Competencias técnicas
           </h3>
           <p className="max-w-2xl text-muted-foreground">
-            A comprehensive overview of my technical skills across embedded systems, software development, 
-            and hardware integration domains.
+            Una visión general de mis habilidades técnicas en sistemas embebidos, desarrollo de software e integración de hardware.
           </p>
         </motion.div>
 
@@ -185,7 +184,7 @@ export function SkillsSection() {
           transition={{ duration: 0.5 }}
         >
           <h4 className="mb-4 font-mono text-sm text-muted-foreground">
-            {"// ALSO EXPERIENCED WITH"}
+            {"// TAMBIÉN EXPERIENCIA CON"}
           </h4>
           <div className="flex flex-wrap gap-2">
             {[
@@ -193,7 +192,7 @@ export function SkillsSection() {
               "ONNX",
               "CAN Bus",
               "Modbus",
-              "PCB Design",
+              "Diseño de PCB",
               "SPICE",
               "Jenkins",
               "GitLab CI",

@@ -20,20 +20,20 @@ export function Footer() {
               <span className="font-medium text-foreground">Alberto García</span>
             </div>
             <p className="text-sm text-muted-foreground">
-              Embedded Software & Systems Engineer building reliable solutions for real-world systems.
+              Ingeniero de Software y Sistemas Embebidos construyendo soluciones confiables para sistemas del mundo real.
             </p>
           </div>
 
           {/* Quick links */}
           <div className="space-y-4">
-            <h4 className="font-mono text-sm text-primary">{"// NAVIGATION"}</h4>
+            <h4 className="font-mono text-sm text-primary">{"// CONTENIDOS"}</h4>
             <ul className="grid grid-cols-2 gap-2 text-sm">
               {[
-                { label: "About", href: "#about" },
-                { label: "Projects", href: "#projects" },
-                { label: "Skills", href: "#skills" },
-                { label: "Experience", href: "#experience" },
-                { label: "Contact", href: "#contact" },
+                { label: "Sobre mi", href: "#about" },
+                { label: "Proyectos", href: "#projects" },
+                { label: "Habilidades", href: "#skills" },
+                { label: "Experiencia", href: "#experience" },
+                { label: "Contacto", href: "#contact" },
                 { label: "CV", href: "/cv.pdf" },
               ].map((link) => (
                 <li key={link.label}>
@@ -50,12 +50,12 @@ export function Footer() {
 
           {/* Social */}
           <div className="space-y-4">
-            <h4 className="font-mono text-sm text-primary">{"// CONNECT"}</h4>
+            <h4 className="font-mono text-sm text-primary">{"// CONECTAR"}</h4>
             <div className="flex gap-3">
               {[
-                { icon: Github, href: "https://github.com/albertogarcia", label: "GitHub" },
-                { icon: Linkedin, href: "https://linkedin.com/in/albertogarcia", label: "LinkedIn" },
-                { icon: Mail, href: "mailto:alberto.garcia@example.com", label: "Email" },
+                { icon: Github, href: "https://github.com/albertogg1", label: "GitHub" },
+                { icon: Linkedin, href: "https://linkedin.com/in/alberto-garciagarcia", label: "LinkedIn" },
+                { icon: Mail, href: "mailto:alberto.garc.garc@gmail.com", label: "Email" },
               ].map((social) => (
                 <Link
                   key={social.label}

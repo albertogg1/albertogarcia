@@ -5,11 +5,11 @@ import Link from "next/link"
 import { useState, useEffect } from "react"
 
 const navItems = [
-  { label: "About", href: "#about" },
-  { label: "Projects", href: "#projects" },
-  { label: "Skills", href: "#skills" },
-  { label: "Experience", href: "#experience" },
-  { label: "Contact", href: "#contact" },
+  { label: "Sobre mi", href: "#about" },
+  { label: "Proyectos", href: "#projects" },
+  { label: "Habilidades", href: "#skills" },
+  { label: "Experiencia", href: "#experience" },
+  { label: "Contacto", href: "#contact" },
 ]
 
 export function Navigation() {
@@ -35,8 +35,12 @@ export function Navigation() {
     >
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
         <Link href="/" className="group flex items-center gap-2">
-          <div className="flex h-8 w-8 items-center justify-center rounded border border-primary/50 bg-primary/10">
-            <span className="font-mono text-sm font-bold text-primary">AG</span>
+          <div className="flex h-8 w-8 items-center justify-center rounded bg-primary/10 overflow-hidden">
+            <img
+              src="/alberto.webp"
+              alt="Alberto García"
+              className="h-8 w-8 object-cover rounded"
+            />
           </div>
           <span className="hidden font-medium text-foreground sm:block">Alberto García</span>
         </Link>

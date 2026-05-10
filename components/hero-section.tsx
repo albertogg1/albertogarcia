@@ -45,7 +45,7 @@ export function HeroSection() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.7 }}
             >
-              Embedded Software & Systems Engineer
+              Ingeniero de Software Embebido y Sistemas
             </motion.p>
           </div>
 
@@ -56,8 +56,8 @@ export function HeroSection() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.8 }}
           >
-            Building reliable software for real-world systems.{" "}
-            <span className="text-accent">Bridging hardware, software, and intelligent systems.</span>
+            Construyendo software confiable para sistemas del mundo real.{" "}
+            <span className="text-accent">Conectando hardware, software y sistemas inteligentes.</span>
           </motion.p>
 
           {/* CTA Buttons */}
@@ -70,39 +70,21 @@ export function HeroSection() {
             <Button asChild size="lg" className="group gap-2">
               <Link href="#projects">
                 <Code className="h-4 w-4 transition-transform group-hover:rotate-12" />
-                View Projects
+                Ver Proyectos
               </Link>
             </Button>
             <Button asChild variant="outline" size="lg" className="group gap-2">
               <Link href="/cv.pdf" target="_blank">
                 <FileText className="h-4 w-4" />
-                Download CV
+                Descargar CV
               </Link>
             </Button>
             <Button asChild variant="ghost" size="lg" className="group gap-2 text-muted-foreground hover:text-foreground">
               <Link href="#contact">
                 <Mail className="h-4 w-4" />
-                Contact
+                Contacto
               </Link>
             </Button>
-          </motion.div>
-
-          {/* Tech stack preview */}
-          <motion.div
-            className="flex flex-wrap items-center gap-3 pt-8 font-mono text-xs text-muted-foreground"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.5, delay: 1.1 }}
-          >
-            <span className="text-primary">{"//"}</span>
-            {["C/C++", "Python", "Embedded", "RTOS", "Signal Processing", "Linux"].map((tech, i) => (
-              <span
-                key={tech}
-                className="rounded border border-border/50 bg-secondary/30 px-2 py-1 transition-colors hover:border-primary/50 hover:bg-primary/10"
-              >
-                {tech}
-              </span>
-            ))}
           </motion.div>
         </motion.div>
       </div>
@@ -115,7 +97,7 @@ export function HeroSection() {
         transition={{ duration: 0.5, delay: 1.3 }}
       >
         <Link href="#about" className="group flex flex-col items-center gap-2 text-muted-foreground transition-colors hover:text-primary">
-          <span className="font-mono text-xs">scroll</span>
+          <span className="font-mono text-xs"></span>
           <ChevronDown className="h-5 w-5 animate-bounce" />
         </Link>
       </motion.div>

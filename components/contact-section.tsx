@@ -10,7 +10,7 @@ export function ContactSection() {
   const [terminalText, setTerminalText] = useState("")
   const [showCursor, setShowCursor] = useState(true)
 
-  const email = "alberto.garcia@example.com"
+  const email = "alberto.garc.garc@gmail.com"
 
   const handleTerminalClick = () => {
     const text = `mail -s "Hello" ${email}`
@@ -43,15 +43,15 @@ export function ContactSection() {
         >
           <div className="mb-4 flex items-center justify-center gap-3">
             <div className="h-px w-12 bg-gradient-to-r from-transparent to-primary/50" />
-            <h2 className="font-mono text-sm text-primary">{"// CONTACT"}</h2>
+            <h2 className="font-mono text-sm text-primary">{"// CONTACTO"}</h2>
             <div className="h-px w-12 bg-gradient-to-l from-transparent to-primary/50" />
           </div>
           <h3 className="mb-4 text-3xl font-bold text-foreground sm:text-4xl">
-            Let&apos;s Connect
+            ¡Conectemos!
           </h3>
           <p className="mx-auto max-w-lg text-muted-foreground">
-            Interested in embedded systems, signal processing, or just want to chat about engineering?
-            I&apos;m always open to discussing new projects and opportunities.
+            ¿Interesado en sistemas embebidos, procesado de señal o quieres hablar sobre ingeniería?
+            Siempre abierto a nuevos proyectos y oportunidades.
           </p>
         </motion.div>
 
@@ -84,13 +84,13 @@ export function ContactSection() {
                   <span className="text-accent">EMAIL:</span> {email}
                 </p>
                 <p>
-                  <span className="text-accent">LINKEDIN:</span> linkedin.com/in/albertogarcia
+                  <span className="text-accent">LINKEDIN:</span> linkedin.com/in/alberto-garciagarcia
                 </p>
                 <p>
-                  <span className="text-accent">GITHUB:</span> github.com/albertogarcia
+                  <span className="text-accent">GITHUB:</span> github.com/albertogg1
                 </p>
                 <p>
-                  <span className="text-accent">LOCATION:</span> Spain, Open to Remote
+                  <span className="text-accent">UBICACIÓN:</span> España, Disponible para trabajo remoto
                 </p>
               </div>
 
@@ -109,7 +109,7 @@ export function ContactSection() {
               variant="outline"
             >
               <Terminal className="h-4 w-4" />
-              Execute Contact Command
+              Ejecutar comando de contacto
             </Button>
           </div>
         </motion.div>
@@ -126,25 +126,25 @@ export function ContactSection() {
             {
               icon: Mail,
               label: "Email",
-              value: "Get in touch",
+              value: "Ponerse en contacto",
               href: `mailto:${email}`,
             },
             {
               icon: Linkedin,
               label: "LinkedIn",
-              value: "Connect",
-              href: "https://linkedin.com/in/albertogarcia",
+              value: "Conectar",
+              href: "https://linkedin.com/in/alberto-garciagarcia",
             },
             {
               icon: Github,
               label: "GitHub",
-              value: "View code",
-              href: "https://github.com/albertogarcia",
+              value: "Ver Proyectos",
+              href: "https://github.com/albertogg1",
             },
             {
               icon: FileText,
               label: "CV",
-              value: "Download",
+              value: "Descargar",
               href: "/cv.pdf",
             },
           ].map((item, index) => (
@@ -183,7 +183,7 @@ export function ContactSection() {
           <Button asChild size="lg" className="gap-2">
             <Link href={`mailto:${email}`}>
               <Send className="h-4 w-4" />
-              Send me a message
+              Envíame un mensaje
             </Link>
           </Button>
         </motion.div>

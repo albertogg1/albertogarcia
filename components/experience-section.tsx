@@ -5,67 +5,72 @@ import { Badge } from "@/components/ui/badge"
 
 const experiences = [
   {
-    period: "2022 — Present",
-    title: "Embedded Software Engineer",
+    period: "2022 — Hoy",
+    title: "Ingeniero de Sistemas de Radar",
     company: "Indra Sistemas",
     companyUrl: "https://www.indracompany.com",
     description:
-      "Leading firmware development for radar and electronic warfare systems. Designing real-time software architectures, implementing communication protocols, and ensuring system reliability under stringent defense industry standards.",
+      "Liderando el desarrollo de firmware para sistemas de radar y guerra electrónica. \
+      Diseño de arquitecturas software en tiempo real, implementación de protocolos de  \
+      comunicación y asegurando la fiabilidad bajo los estándares más exigentes del sector \
+      de defensa.",
     highlights: [
-      "Developed mission-critical firmware in C for ARM Cortex-M processors",
-      "Implemented RS422 communication protocols with zero data loss",
-      "Created Python automation tools reducing validation time by 60%",
-      "Collaborated with hardware teams on HW/SW integration and debugging",
+      "Integración de cadenas de RF/mmWave",
+      "Implementación de protocolos RS422/232 para comunicación con sensores",
+      "Desarrollo de firmware crítico en C para microcontroladores",
+      "Manejo de instrumentación de laboratorio como osciloscopios y analizadores de espectro",
+      "Herramientas de automatización en Python reduciendo el tiempo de validación",
+      "Colaboración con equipos de hardware en integración y depuración HW/SW",
     ],
-    technologies: ["C", "C++", "Python", "FreeRTOS", "STM32", "RS422", "Git"],
+    technologies: ["RF Systems", "C", "Python", "RS422", "RS232", "Git", "MATLAB"],
     type: "full-time",
   },
   {
     period: "2021 — 2022",
-    title: "Research Assistant",
+    title: "Investigador Asistente",
     company: "Universidad Politécnica",
     companyUrl: "#",
     description:
-      "Conducted research in signal processing and embedded systems. Developed algorithms for sensor data analysis and contributed to academic publications in the field of telecommunications.",
+      "Investigación en procesado de señal y sistemas embebidos. Desarrollo de algoritmos para análisis de datos de sensores y contribución a publicaciones académicas en telecomunicaciones.",
     highlights: [
-      "Designed DSP algorithms for radar signal processing applications",
-      "Implemented real-time data acquisition systems using MATLAB",
-      "Published research on signal classification techniques",
-      "Mentored undergraduate students in embedded systems projects",
+      "Diseño de algoritmos DSP para aplicaciones de radar",
+      "Implementación de sistemas de adquisición de datos en tiempo real con MATLAB",
+      "Publicación de investigaciones sobre clasificación de señales",
+      "Mentoría a estudiantes en proyectos de sistemas embebidos",
     ],
-    technologies: ["MATLAB", "Python", "C", "Signal Processing", "LabVIEW"],
+    technologies: ["MATLAB", "Python", "C", "Procesado de Señal", "LabVIEW"],
     type: "research",
   },
   {
     period: "2019 — 2021",
-    title: "STEM Instructor",
-    company: "Various Institutions",
+    title: "Instructor STEM",
+    company: "Varias Instituciones",
     companyUrl: "#",
     description:
-      "Taught programming and electronics fundamentals to students of various ages. Developed curriculum for embedded systems workshops and robotics programs.",
+      "Docencia en programación y electrónica a estudiantes de diferentes edades. Desarrollo de material didáctico para talleres de sistemas embebidos y robótica.",
     highlights: [
-      "Created hands-on curriculum for Arduino and Raspberry Pi projects",
-      "Taught Python programming to 100+ students",
-      "Organized electronics workshops for young engineers",
-      "Developed educational materials for microcontroller programming",
+      "Creación de talleres prácticos con Arduino y Raspberry Pi",
+      "Enseñanza de Python a más de 100 estudiantes",
+      "Organización de talleres de electrónica para jóvenes ingenieros",
+      "Desarrollo de materiales educativos para microcontroladores",
     ],
-    technologies: ["Arduino", "Python", "Raspberry Pi", "Electronics", "Robotics"],
+    technologies: ["Arduino", "Python", "Raspberry Pi", "Electrónica", "Robótica"],
     type: "teaching",
   },
   {
-    period: "2018 — Present",
-    title: "Freelance Developer",
-    company: "Self-Employed",
+    period: "2018 — Actualidad",
+    title: "Desarrollador Freelance",
+    company: "Autónomo",
     companyUrl: "#",
     description:
-      "Providing embedded systems consulting and custom software development services. Specializing in hardware automation, data visualization, and industrial control systems.",
+      "Consultoría en sistemas embebidos y desarrollo de software a medida. Especialista en automatización hardware, visualización de datos y sistemas de control industrial.",
     highlights: [
-      "Delivered custom automation solutions for manufacturing clients",
-      "Built data visualization dashboards for industrial equipment",
-      "Developed PyQt applications for hardware control interfaces",
-      "Consulted on embedded architecture decisions for startups",
+      "Soluciones de automatización personalizadas para clientes industriales",
+      "Dashboards de visualización de datos para equipos industriales",
+      "Aplicaciones PyQt para interfaces de control de hardware",
+      "Asesoría en arquitectura embebida para startups",
     ],
-    technologies: ["Python", "PyQt", "C", "Automation", "APIs", "Databases"],
+    technologies: ["Python", "PyQt", "C", "Automatización", "APIs", "Bases de datos"],
     type: "freelance",
   },
 ]
@@ -83,14 +88,14 @@ export function ExperienceSection() {
           transition={{ duration: 0.5 }}
         >
           <div className="flex items-center gap-3">
-            <h2 className="font-mono text-sm text-primary">{"// EXPERIENCE"}</h2>
+            <h2 className="font-mono text-sm text-primary">{"// EXPERIENCIA"}</h2>
             <div className="h-px flex-1 bg-gradient-to-r from-primary/50 to-transparent" />
           </div>
           <h3 className="text-3xl font-bold text-foreground sm:text-4xl">
-            Professional Journey
+            Trayectoria Profesional
           </h3>
           <p className="max-w-2xl text-muted-foreground">
-            A timeline of my career in embedded systems engineering, research, and education.
+            Una línea temporal de mi carrera en ingeniería de sistemas embebidos, investigación y educación.
           </p>
         </motion.div>
 
