@@ -126,7 +126,7 @@ export function ContactSection() {
             {
               icon: Mail,
               label: "Email",
-              value: "Ponerse en contacto",
+              value: "Contactar",
               href: `mailto:${email}`,
             },
             {

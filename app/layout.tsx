@@ -14,7 +14,7 @@ const jetbrainsMono = JetBrains_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'Alberto García | Embedded Software & Systems Engineer',
+  title: 'Alberto García',
   description: 'Telecommunications Engineer specialized in Embedded Systems, Signal Processing, and Software Engineering. Building reliable software for real-world systems.',
   keywords: ['Embedded Systems', 'Signal Processing', 'C/C++', 'Python', 'Firmware', 'Real-time Systems', 'Hardware/Software Integration'],
   authors: [{ name: 'Alberto García' }],
