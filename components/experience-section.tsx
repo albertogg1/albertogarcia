@@ -5,72 +5,67 @@ import { Badge } from "@/components/ui/badge"
 
 const experiences = [
   {
-    period: "2022 — Hoy",
+    period: "2024 — Hoy",
     title: "Ingeniero de Sistemas de Radar",
     company: "Indra Sistemas",
     companyUrl: "https://www.indracompany.com",
     description:
-      "Liderando el desarrollo de firmware para sistemas de radar y guerra electrónica. \
-      Diseño de arquitecturas software en tiempo real, implementación de protocolos de  \
-      comunicación y asegurando la fiabilidad bajo los estándares más exigentes del sector \
-      de defensa.",
+      "Integración de sistemas HW/SW en entornos de ingeniería avanzada. Automatización de herramientas de validación y pruebas con Python. Depuración y desarrollo de firmware en C para sistemas embebidos.",
     highlights: [
       "Integración de cadenas de RF/mmWave",
       "Implementación de protocolos RS422/232 para comunicación con sensores",
       "Desarrollo de firmware crítico en C para microcontroladores",
       "Manejo de instrumentación de laboratorio como osciloscopios y analizadores de espectro",
-      "Herramientas de automatización en Python reduciendo el tiempo de validación",
+      "Herramientas de automatización en Python (PyQt) reduciendo el tiempo de validación",
       "Colaboración con equipos de hardware en integración y depuración HW/SW",
     ],
     technologies: ["RF Systems", "C", "Python", "RS422", "RS232", "Git", "MATLAB"],
     type: "full-time",
   },
   {
-    period: "2021 — 2022",
+    period: "2024",
     title: "Investigador Asistente",
-    company: "Universidad Politécnica",
-    companyUrl: "#",
+    company: "Grupo de Procesado en Array - Universidad de Valladolid",
+    companyUrl: "https://gpa.uva.es/",
     description:
-      "Investigación en procesado de señal y sistemas embebidos. Desarrollo de algoritmos para análisis de datos de sensores y contribución a publicaciones académicas en telecomunicaciones.",
+      "Desarrollo de sistemas de adquisición de señales en LabVIEW. Procesamiento, limpieza y análisis estadístico de datos en Python (NumPy, Pandas). Diseño e implementación de arquitecturas de deep learning desde cero utilizando TensorFlow para problemas de clasificación y localización, incluyendo entrenamiento, validación y evaluación de modelos.",
     highlights: [
-      "Diseño de algoritmos DSP para aplicaciones de radar",
-      "Implementación de sistemas de adquisición de datos en tiempo real con MATLAB",
-      "Publicación de investigaciones sobre clasificación de señales",
-      "Mentoría a estudiantes en proyectos de sistemas embebidos",
+      "Implementación de sistemas de adquisición y procesamiento de datos en LabVIEW",
+      "Procesamiento de señales en MATLAB y Python para análisis de datos experimentales",
+      "Exploración de arquitecturas de deep learning para clasificación de señales temporales",
+      "Entrenamiento y evaluación de modelos de deep learning utilizando TensorFlow",
     ],
-    technologies: ["MATLAB", "Python", "C", "Procesado de Señal", "LabVIEW"],
+    technologies: ["LabVIEW", "Procesado de Señal", "MATLAB", "Python", "TensorFlow"],
     type: "research",
   },
   {
-    period: "2019 — 2021",
+    period: "2023",
     title: "Instructor STEM",
-    company: "Varias Instituciones",
-    companyUrl: "#",
+    company: "PlayCode Academy",
+    companyUrl: "https://playcodeacademy.com/",
     description:
       "Docencia en programación y electrónica a estudiantes de diferentes edades. Desarrollo de material didáctico para talleres de sistemas embebidos y robótica.",
     highlights: [
-      "Creación de talleres prácticos con Arduino y Raspberry Pi",
-      "Enseñanza de Python a más de 100 estudiantes",
-      "Organización de talleres de electrónica para jóvenes ingenieros",
-      "Desarrollo de materiales educativos para microcontroladores",
+      "Creación de talleres prácticos con Arduino",
+      "Enseñanza de desarrollo web en Scratch a más de 100 estudiantes",
+      "Organización de talleres de electrónica para jóvenes",
     ],
-    technologies: ["Arduino", "Python", "Raspberry Pi", "Electrónica", "Robótica"],
+    technologies: ["Arduino", "Python", "Electrónica", "Robótica"],
     type: "teaching",
   },
   {
-    period: "2018 — Actualidad",
+    period: "2022",
     title: "Desarrollador Freelance",
-    company: "Autónomo",
-    companyUrl: "#",
+    company: "Julia Castro",
+    companyUrl: "https://juliacastrog.es",
     description:
-      "Consultoría en sistemas embebidos y desarrollo de software a medida. Especialista en automatización hardware, visualización de datos y sistemas de control industrial.",
+      "Desarrollo full-stack de una aplicación web para una artista.",
     highlights: [
-      "Soluciones de automatización personalizadas para clientes industriales",
-      "Dashboards de visualización de datos para equipos industriales",
-      "Aplicaciones PyQt para interfaces de control de hardware",
-      "Asesoría en arquitectura embebida para startups",
+      "Diseño y desarrollo de interfaces de usuario responsivas",
+      "Implementación de funcionalidades backend",
+      "Optimización de rendimiento y seguridad",
     ],
-    technologies: ["Python", "PyQt", "C", "Automatización", "APIs", "Bases de datos"],
+    technologies: ["HTML5", "CSS3", "JavaScript", "MySQL"],
     type: "freelance",
   },
 ]
@@ -95,14 +90,14 @@ export function ExperienceSection() {
             Trayectoria Profesional
           </h3>
           <p className="max-w-2xl text-muted-foreground">
-            Una línea temporal de mi carrera en ingeniería de sistemas embebidos, investigación y educación.
+            Una línea temporal de mi carrera en ingeniería de sistemas, investigación y educación.
           </p>
         </motion.div>
 
         {/* Timeline */}
         <div className="relative">
           {/* Timeline line */}
-          <div className="absolute left-0 top-0 h-full w-px bg-gradient-to-b from-primary via-border to-transparent md:left-[140px]" />
+          <div className="absolute left-2 top-0 h-full w-px bg-gradient-to-b from-primary via-border to-transparent md:left-[140px]" />
 
           {/* Experience items */}
           <div className="space-y-12">
@@ -137,7 +132,18 @@ export function ExperienceSection() {
                   <div className="mb-4 flex flex-wrap items-start justify-between gap-2">
                     <div>
                       <h4 className="text-lg font-semibold text-foreground">{exp.title}</h4>
-                      <p className="text-primary">{exp.company}</p>
+                      {exp.companyUrl ? (
+                        <a
+                          href={exp.companyUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-primary underline-offset-2 hover:text-accent transition-colors"
+                        >
+                          {exp.company}
+                        </a>
+                      ) : (
+                        <span className="text-primary">{exp.company}</span>
+                      )}
                     </div>
                     <Badge
                       variant="outline"

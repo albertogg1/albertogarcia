@@ -8,12 +8,9 @@ const skillCategories = [
     name: "Embebido",
     color: "primary",
     skills: [
-      { name: "C", level: 95 },
-      { name: "C++", level: 85 },
-      { name: "STM32", level: 90 },
-      { name: "FreeRTOS", level: 85 },
-      { name: "ARM Cortex", level: 80 },
-      { name: "Bare Metal", level: 90 },
+      { name: "C", level: 90 },
+      { name: "MIPS32®", level: 80 },
+      { name: "FreeRTOS", level: 45 },
     ],
   },
   {
@@ -21,23 +18,21 @@ const skillCategories = [
     color: "accent",
     skills: [
       { name: "Python", level: 95 },
-      { name: "MATLAB", level: 80 },
+      { name: "PyQt", level: 85 },
+      { name: "MATLAB", level: 90 },
       { name: "Git", level: 90 },
-      { name: "Linux", level: 85 },
-      { name: "PyQt", level: 75 },
-      { name: "FastAPI", level: 70 },
+      { name: "Linux", level: 70 },
     ],
   },
   {
     name: "Hardware",
     color: "primary",
     skills: [
-      { name: "RS422/485", level: 90 },
-      { name: "SPI/I2C", level: 95 },
-      { name: "UART", level: 95 },
-      { name: "USB", level: 75 },
+      { name: "Modbus RTU (RS-232/422/485)", level: 95 },
+      { name: "UART", level: 75 },
       { name: "GPIB", level: 80 },
       { name: "Osciloscopios", level: 85 },
+      { name: "Analizador de espectro", level: 90 },
     ],
   },
   {
@@ -48,7 +43,6 @@ const skillCategories = [
       { name: "Análisis FFT", level: 90 },
       { name: "Filtrado", level: 85 },
       { name: "Sistemas Radar", level: 80 },
-      { name: "Sensor Fusion", level: 75 },
       { name: "NumPy/SciPy", level: 90 },
     ],
   },
@@ -56,12 +50,12 @@ const skillCategories = [
     name: "Cloud & DevOps",
     color: "primary",
     skills: [
-      { name: "Docker", level: 80 },
+      { name: "Docker", level: 70 },
       { name: "Kubernetes", level: 60 },
       { name: "AWS", level: 65 },
       { name: "Azure", level: 60 },
-      { name: "CI/CD", level: 75 },
-      { name: "Terraform", level: 55 },
+      { name: "CI/CD", level: 85 },
+      { name: "Terraform", level: 60 },
     ],
   },
   {
@@ -69,10 +63,7 @@ const skillCategories = [
     color: "accent",
     skills: [
       { name: "VS Code", level: 95 },
-      { name: "Keil/IAR", level: 85 },
-      { name: "LabVIEW", level: 70 },
-      { name: "Jira", level: 85 },
-      { name: "Confluence", level: 80 },
+      { name: "LabVIEW", level: 80 },
       { name: "Wireshark", level: 75 },
     ],
   },
@@ -189,20 +180,10 @@ export function SkillsSection() {
           <div className="flex flex-wrap gap-2">
             {[
               "TensorFlow",
-              "ONNX",
-              "CAN Bus",
-              "Modbus",
-              "Diseño de PCB",
               "SPICE",
               "Jenkins",
               "GitLab CI",
               "Bash",
-              "Make/CMake",
-              "GDB",
-              "Valgrind",
-              "Protocol Analyzers",
-              "Logic Analyzers",
-              "Spectrum Analyzers",
             ].map((tool) => (
               <span
                 key={tool}

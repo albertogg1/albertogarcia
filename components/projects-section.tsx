@@ -7,7 +7,7 @@ import { Badge } from "@/components/ui/badge"
 import Link from "next/link"
 
 const projects = [
-  {
+  /* {
     title: "SmartRep",
     category: "Sistemas Embebidos",
     description:
@@ -19,20 +19,29 @@ const projects = [
     github: "https://github.com/albertogg1/SmartRep",
     featured: true,
     wip: true,
-  },
+  }, */
   {
     title: "PomoBot",
     category: "Desarrollo Web",
     description:
       "Web para herramienta de productividad Pomodoro.",
     challenge:
-      "Desarrollo de lógica de temporización precisa y comunicación en tiempo real en entorno web.",
-    technologies: ["React", "Vite", "Node.js", "Vercel"],
-    achievements: ["99.9% de disponibilidad", "Interfaz intuitiva", "Despliegue automático"],
+      "Diseño y desarrollo de un sitio web para una herramienta de productividad, enfocado en comunicar su propuesta de valor y facilitar la interacción con el usuario.",
+    technologies: ["React", "Vite", "Node.js", "Firebase", "Vercel"],
+    achievements: ["Alta disponibilidad", "Interfaz intuitiva", "Despliegue automático"],
     github: "https://github.com/albertogg1/PomoBot",
     demo: "https://pomo-bot.vercel.app",
-    featured: false,
+    featured: true,
     wip: true,
+  },
+  {
+    title: "Nova Madrid Toastmasters",
+    category: "Desarrollo Web",
+    description:
+      "Web para club de oratoria con gestión de miembros.",
+        technologies: ["WordPress"],
+    achievements: ["CMS personalizado", "Diseño responsivo", "SEO optimizado"],
+    featured: false
   },
   {
     title: "Julia Castro",
