@@ -7,6 +7,7 @@ import { ExperienceSection } from "@/components/experience-section"
 import { ContactSection } from "@/components/contact-section"
 import { Footer } from "@/components/footer"
 import { WaveformBackground, GridBackground } from "@/components/waveform-background"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 export default function Home() {
   return (
@@ -26,6 +27,9 @@ export default function Home() {
         <ContactSection />
         <Footer />
       </div>
+
+      {/* Performance monitoring */}
+      <SpeedInsights />
     </main>
   )
 }
