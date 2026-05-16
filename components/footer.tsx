@@ -14,8 +14,8 @@ export function Footer() {
           {/* Brand */}
           <div className="space-y-4">
             <div className="flex items-center gap-2">
-              <div className="flex h-8 w-8 items-center justify-center rounded border border-primary/50 bg-primary/10">
-                <span className="font-mono text-sm font-bold text-primary">AG</span>
+              <div className="flex h-8 w-8 items-center justify-center rounded border">
+                <img src="/icon-dark.svg" alt="Alberto García Logo" className="h-8 w-8" />
               </div>
               <span className="font-medium text-foreground">Alberto García</span>
             </div>
